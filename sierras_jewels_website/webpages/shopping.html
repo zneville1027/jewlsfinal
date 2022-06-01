@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap eCommerce Page Template</title>
+    <!-- Bootstrap -->
+	  <link rel="stylesheet" href="https://use.typekit.net/rpb6caz.css">
+    <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="../css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+	  <style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+
+}
+</style>
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+	  
+ <div class="loader"></div>
+	
+ <div style="display:block"  id="myDiv" class="animate-bottom">
+    <nav class="navbar-dark navbar1 ">
+   
+		  <h1><img src="../images/doublemushroom.png" alt="sierra jewelry mushroom logo" width="100" height="100" /> Sierra's Jewels</h1>
+      
+	
+    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="../images/logo1.png" width="75" height="75" alt="sierras jewels logo"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+			  <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+			  <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQs</a>
+            </li>
+			   <li class="nav-item">
+               <a class="nav-link" href="shopping.html">Checkout/Cart</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jewelry</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="earrings.html">Earrings</a>
+                <a class="dropdown-item" href="necklaces.html">Necklaces</a>
+            
+                <a class="dropdown-item" href="rings.html">Rings</a>
+              </div>
+            </li>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+
+        </div>
+      </div>
+  </nav>
+    
+   
+    <hr>
+    <h2 class="text-center">Cart</h2>
+    <hr>
+  
+	  <div class="card-body text-center">
+		   
+        <a href="cart.html" class="btn btn-primary">View Cart</a>
+		
+</div>
+	    <p>&nbsp;</p>
+	   
+    <h2 class="text-center">checkout</h2>
+    <hr>
+	 <div class="card-body text-center">
+		   
+        <a href="checkout.html" class="btn btn-primary">View Checkout</a>
+		   
+		 
+</div>
+	 
+	    <p>&nbsp;</p>
+	  
+	 
+	 
+    <nav class="navbar-dark foot">
+      <div class="text-center">
+		  
+      <div class="container">
+        <div class="row">
+        <div class="container">
+      <div class="row">
+        <div class="col-lg-4"> </div>
+        <div class="col-lg-4">
+          <ul class="list-unstyled">
+            
+             <li class="media my-4">
+<div class="media-body contact">
+  <h5 class="mt-0 mb-1">Contact&nbsp;</h5>
+               <p class="contacttt"><a href="https://www.instagram.com/_sierrasjewels_/"><img src="../images/Instagram_logo.png" alt="" width="30" height="30"/></a> <a href="instagram.com" class="callemailinsta">_sierrasjewels_</a> </p>
+				<p class="contacttt"><img src="../images/molumen_phone_icon.png" alt="" width="30" height="30"/> <a href="tel:1234567890" class="callemailinsta">704-792-6504</a></p>
+				<p class="contacttt"><img src="../images/email_icon.png" width="30" height="30" alt=""/> <a href="mailto:sierra.k.r17@gmail.com" class="callemailinsta">sierra.k.r17@gmail.com</a></p>
+            </div>
+            </div>
+            </li>
+            
+            
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul class="list-unstyled">
+            
+            
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+		
+		</div>
+    </nav>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="file:///Macintosh HD/Users/deeptikam/OneDrive - Cabarrus County Schools/Sierra's Jewels/sierras_jewels_website/js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="file:///Macintosh HD/Users/deeptikam/OneDrive - Cabarrus County Schools/Sierra's Jewels/sierras_jewels_website/js/popper.min.js"></script>
+    <script src="file:///Macintosh HD/Users/deeptikam/OneDrive - Cabarrus County Schools/Sierra's Jewels/sierras_jewels_website/js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
